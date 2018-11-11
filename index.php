@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	
 	<!-- Dark and Light themes-->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<!-- jquery for switching themes-->
@@ -17,7 +17,7 @@
 
 </head>
 	<div class="container">
-		<center><img style="width:80%" src="/resources/movieT.png" style="width:50%"></center>
+		<center><img style="width:80%" src="/images/movieT.png" style="width:50%"></center>
 		<center><h1 class="yellow">Welcome to Movie Central</h1></center>
 		<center><small class="yellow">
 			<?php

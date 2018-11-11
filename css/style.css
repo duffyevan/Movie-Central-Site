@@ -45,7 +45,7 @@ a:hover{
 }
 
 .well{
-	background-image: url("resources/popcorn.jpg");
+	background-image: url("/images/popcorn.jpg");
 	border-color: #FFFB29;
 	border-width: 3px;
 	box-shadow: 5px 5px 5px black;
