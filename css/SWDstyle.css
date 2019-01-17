@@ -11,7 +11,7 @@ right{
 }
 body{
 	margin-top: 8%;
-	background-image: url("../../resources/stars.jpg");
+	background-image: url("/images/stars.jpg");
 	-webkit-animation: fadein 2s;
 }
 p{
@@ -54,7 +54,7 @@ li{
 }
 
 .well{
-	background-image: url("resources/stars.jpg");
+	background-image: url("/images/stars.jpg");
 	border-color: #e6c648;
 	border-width: 3px;
 	transition: all ease 0.4s;
