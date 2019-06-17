@@ -1,0 +1,10 @@
+AuthFormProvider file
+ErrorDocument 401 "/login.html"
+AuthUserFile "/etc/apache2/htpasswd"
+AuthGroupFile "/etc/apache2/htgroup"
+AuthType form
+AuthName "Please Log In" 
+# AuthFormLoginRequiredLocation "http://example.com/login.html"
+Session On
+SessionCookieName session path=/
+require group users

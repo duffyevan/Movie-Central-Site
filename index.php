@@ -13,7 +13,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<!-- jquery for switching themes-->
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 </head>
 <body>
@@ -34,14 +34,14 @@
                 $files = scandir($dir) or die ("FUCK something went wrong loading the files...");
                 foreach ($files as $file){
                         if ($file != "index.php" && $file != "." && $file != ".." && $file != ".htaccess" && $file != "style.css")
-                            echo "<center><a href='video/" . $file . "'><div class='well'><center>" . str_replace(".mp4", "", str_replace(".mkv", "", str_replace(".avi", "", $file))) . "</center></div></a></center>";
+                            echo "<center><a href='video/" . $file . "'><div class='well hoverwell'><center>" . str_replace(".mp4", "", str_replace(".mkv", "", str_replace(".avi", "", $file))) . "</center></div></a></center>";
                         }
             ?>
 		</h2>
 	</div>
-	<center class="mainText" style="font-size:12">Site Made By Evan Duffy<br></center>
+	<center class="mainText" style="font-size:12pt">Site Made By Evan Duffy<br></center>
 	<div class="myfooter">
-        <p class="mainText">December 2018</p>
+        <p class="mainText"><?php echo date('F Y') ?></p>
     </div>
     <p class="version">Version 1.2</p>
 </body>

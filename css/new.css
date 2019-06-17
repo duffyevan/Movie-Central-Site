@@ -61,7 +61,14 @@ a:hover{
 	transition-delay: initial;
 }
 
-.well{
+.loginwell{
+	font-size: 160%;
+	background: #f7da69;
+	border-color: #FFFFFF;
+	border-width: 0px;
+}
+
+.hoverwell{
 	font-size: 160%;
 	background: #f7da69;
 	border-color: #FFFFFF;
@@ -74,7 +81,7 @@ a:hover{
 	transition-timing-function: ease;
 	transition-delay: initial;
 }
-.well:hover{
+.hoverwell:hover{
 	background: #69b7f7;
 	transform: translate3d(-5px,-5px,-5px);
 	box-shadow: 10px 10px 10px black;
