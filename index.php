@@ -2,6 +2,8 @@
 <head>
 	<title>Evan Duffy's Video Server</title>
 	<!-- Various bootstrap links here -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -25,6 +27,7 @@
 					echo round(disk_free_space("/Storage/video/")/(1024*1024*1024)*$mult)/$mult . " GB Free On The Disk In Use"
 				?>
 		</small>
+        <input class="form-control" placeholder="Search" id="search-box">
 	</div>
 	<div class="container">
 		<p style="text-align:center"><br><br></p>
@@ -34,7 +37,7 @@
                 $files = scandir($dir) or die ("FUCK something went wrong loading the files...");
                 foreach ($files as $file){
                         if ($file != "index.php" && $file != "." && $file != ".." && $file != ".htaccess" && $file != "style.css")
-                            echo "<center><a href='video/" . $file . "'><div class='well hoverwell'><center>" . str_replace(".mp4", "", str_replace(".mkv", "", str_replace(".avi", "", $file))) . "</center></div></a></center>";
+                            echo "<center><a href='video/" . $file . "'><div class='well hoverwell'><center><div class='title'>" . str_replace(".mp4", "", str_replace(".mkv", "", str_replace(".avi", "", $file))) . "</div></center></div></a></center>";
                         }
             ?>
 		</h2>
@@ -45,6 +48,7 @@
     </div>
     <p class="version">Version 1.2</p>
 </body>
+<script type="text/javascript" src="js/search.js"></script>
 </html>
 <!-- CHANGELOG -->
 <!-- 1.0 Initial release, everything works and I'm happy -->

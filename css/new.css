@@ -1,3 +1,9 @@
+#search-box{
+    float: right;
+    width: 50%;
+    margin-right: 1%;
+}
+
 .btn-group{
 	margin-left: 10%;
 	margin-right: 10%;
