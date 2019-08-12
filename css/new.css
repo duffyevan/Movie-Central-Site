@@ -130,7 +130,7 @@ a:hover{
 
 .version{
 	color: #df5858;
-	padding-top: 50px;
+	/* padding-top: 50px; */
 	transition: all ease 0.4s;
 	transition-property: all;
 	transition-duration: 0.4s;

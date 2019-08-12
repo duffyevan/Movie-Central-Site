@@ -47,6 +47,7 @@
         <p class="mainText"><?php echo date('F Y') ?></p>
     </div>
     <p class="version">Version 1.2</p>
+    <p class="version">Client IP: <?php echo $_SERVER['REMOTE_ADDR'] ?> </p>
 </body>
 <script type="text/javascript" src="js/search.js"></script>
 </html>
